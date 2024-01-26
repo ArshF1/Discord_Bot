@@ -1,1 +1,4 @@
 .env
+bot_tester.py
+botSQL.py
+test.py
