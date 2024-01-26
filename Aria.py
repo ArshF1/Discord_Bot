@@ -25,7 +25,7 @@ async def on_ready():
 async def on_message(message):
     if message.author==client.user:
         return
-    if message.content.startswith("-Hello"):
+    elif message.content.startswith("-Hello"):
         await message.channel.send("Hello")
     elif message.content=="-a":
         await message.channel.send(message.author.mention+" Bot is working!")
