@@ -27,7 +27,7 @@ async def on_message(message):
         return
     if message.content.startswith("-Hello"):
         await message.channel.send("Hello")
-    if message.content=="-a":
+    elif message.content=="-a":
         await message.channel.send(message.author.mention+" Bot is working!")
     elif message.content.startswith("-add"):
         userAdmin.append(int(message.content[7:len(message.content)-1].strip()))
