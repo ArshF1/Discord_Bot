@@ -20,7 +20,7 @@ userAdmin=arr.array("q",[741931775835635764])
 @client.event
 async def on_ready():
     print(f"We have logged in as {client.user}")
-
+    return f"We have logged in as {client.user}"
 @client.event
 async def on_message(message):
     if message.author==client.user:
