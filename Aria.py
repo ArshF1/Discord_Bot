@@ -64,7 +64,11 @@ async def on_message(message):
         await message.channel.send("Have a nice day! ")
         exit()
     else:
-        await message.channel.send("Kya matlab tumhare liye command nahi hai 🤭🤭")
+        if message.content.startswith("-"):
+            await message.channel.send("Incomplete Command 🙂")
+        else:
+            pass
+            await message.channel.send("Kya matlab tumhare liye command nahi hai 🤭🤭")
 
 # @client.event
 # async def on_message(message):
